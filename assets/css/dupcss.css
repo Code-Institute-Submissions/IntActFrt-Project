@@ -1,0 +1,212 @@
+
+
+/* ----------------------------------------Images */
+
+.slider {
+    background: url("../figures/serviceslider.png");
+    background-position: center;
+    background-repeat: no-repeat;
+     
+}
+
+
+.QR {
+    background: url("../figures/qrwheel.png");
+    background-position: inline;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 200px;
+    padding: 1px;
+    object-fit: scale-down;  
+    margin-top: 10px;
+}
+
+.Bolted {
+    background: url("../figures/Bolted.png");
+    background-position: inline;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+    padding: 1px;
+    object-fit: scale-down;  
+}
+
+.smallBolt {
+    background: url("../figures/smallBolt.png");
+    background-position: inline;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+    padding: 1px;
+    object-fit: scale-down;  
+}
+
+.largeBolt {
+    background: url("../figures/largeBolt.png");
+    background-position: inline;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+    padding: 1px;
+    object-fit: scale-down;  
+}
+
+.open {
+    background: url("../figures/qropclos.jpg");
+    background-position: inline;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+    padding: 1px;
+    object-fit: scale-down;
+}
+
+
+
+div.background {
+    background-image: url("../figures/mtb.png");
+    border: 2px solid #179db8;
+    background-size: 100% 100%;
+}
+
+/*---- Section of text taken from W3C site ----*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+/* ----------------------------------------Text Properties */
+
+
+/* ------------------------ Formatting */
+.tab-width {
+    margin: 5px;
+    width: 100%;
+    padding: 25px;
+    color: black;
+    
+    
+}
+
+.centerText {
+    text-align: center;
+        
+}
+
+.margin {
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    margin: 25px;
+}
+
+.marg {
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 30px;
+
+
+}
+.right {
+    text-align: right;
+
+}
+
+/*----Nav Bar---Taken from Bootstrap, and unused in this project as it did not work--*/
+
+.navbar-custom {
+    background-color:  #179db8;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #179db8;
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+        color: #179db8;
+}
+
+.carousel .carousel-indicators ol {
+  background-color: #fff;
+  background-color: #96ff00;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #444;
+}
+
+
+
+/* ----------- #96ff00------------- Colour */
+.bg-header {
+    background-color: #179db8;
+}
+
+.hd-colour {
+    color:black;
+    font-size: 8vw;
+}
+
+.mbhd-text {
+    color: black;
+    font-size: 5vw;
+
+}
+
+.mb-text {
+    color: black;
+    font-size: 3vw;
+
+}
+
+.quick-colour {
+    color: #96ff00;
+    font-size: 6vw;
+
+}
+
+.text-colour {
+    color: #96ff00;
+        
+}
+
+.ac-colour {
+    color: black;
+    font-size: 2vw;
+}
+
+.tb-colour {
+    color: #fafafa;
+}
+
+.sec-colour {
+    color: black;
+    font-size: 4vw;
+
+}
+
+.bg-color-name-title {
+    background-color: #179db8;
+}
+
+.txt-color {
+    color:black;
+    font-size: 3vx;
+}
+
+.sp-color {
+    color: black;
+    font-size: 2vx;
+    
+}
+
+.black {
+    color:black;
+    
+}
+
+
+
