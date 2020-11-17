@@ -16,7 +16,20 @@
   <h1>My Google Map</h1>
   <div id="map"></div>
   <script>
-    function initMap(){
+
+/* let map: google.maps.Map;
+
+
+function initMap(): void {
+  map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  
+}*/
+
+
+
+   function initMap(){
       // Map options
       var options = {
         zoom:8,
@@ -49,19 +62,50 @@
       });
       */
 
+
+
+
+
       // Array of markers
       var markers = [
         {
-          coords:{lat:51.8065,lng:-2.5693},
+          coords:{lat:51.806511,lng:-2.569311},
           iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
           content:'<h1>Lynn MA</h1>'
+          
         },
         {
-          coords:{lat:51.809584,lng:-2.569},
+          coords:{lat:51.809584,lng:-2.569111},
           content:'<h1>Amesbury MA</h1>'
         },
         {
-          coords:{lat:51.80948,lng:-2.5693}
+          coords:{lat:51.8333131,lng:-2.5691213},
+          content:'<h1>Pedle a bike away</h1>'
+        },
+        {
+          coords:{lat:51.8333121,lng:-2.5124878},
+		content:'<h1>Sprung Suspension</h1>'
+		},
+
+		{
+          coords:{lat:51.78954,lng:-2.59879},
+          content:'<h1>one</h1>'
+	  
+        },
+{
+          coords:{lat:51.7704644,lng:-2.6539043},
+          content:'<h1>two</h1>'
+	  
+        },
+{
+          coords:{lat:51.7688909,lng:-2.8599567},
+          content:'<h1>three</h1>'
+	  
+        },
+
+        {
+          coords:{lat:51.80948,lng:-2.5693},
+          content:'<h1>four</h1>'
         }
       ];
 
@@ -99,7 +143,7 @@
     }
   </script>
   <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn5gWVl_-9j3IOH5HTZ737UI6VYOAJj74&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjx-VAXXUKE_iSpdrBup7q-8Xm3V3p16I&callback=initMap">
     </script>
 </body>
 </html>

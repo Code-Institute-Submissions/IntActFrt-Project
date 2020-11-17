@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+  <title>Places to Repair your bike</title>
+  <style>
+    #map{
+      height:600px;
+      width:100%;
+    }
+  </style>
+</head>
+<body class="bg-header">
+	<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light text-colour-ltgr bg-header" >
+    <a class="navbar-brand text-colour-ltgr" href="#">OneStop Bike Shop</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse text-colour-ltgr" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-colour-ltgr" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-colour-ltgr" href="service.html">Book a Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-colour-ltgr" href="toolsales.html">Tool Sales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-colour-ltgr" href="spares.html">Spares Sales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-colour-ltgr" href="bikesales.html">Bike Sales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-colour-ltgr" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-info my-2 my-sm-0 text-colour-ltgr" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+</header>
+
+<div><h1 class="margin">Places to Enjoy</h1></div>
+  <div id="map"></div>
+  <script>
+    function initMap(){
+      // Map options
+      var options = {
+        zoom:10,
+        center:{lat:51.7819,lng:-2.5765}
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+
+      // Listen for click on map
+      google.maps.event.addListener(map, 'click', function(event){
+        // Add marker
+        addMarker({coords:event.latLng});
+      });
+
+      
+
+      // Array of markers
+      var markers = [
+        {
+          coords:{lat:51.7661148,lng:-2.556003},
+          title:"Hello",
+		  content:"<div><h2>Dean Forest Cycles</h2><p>Cafe and accessory Sale</p></div>" +
+		  "<div><p>Tele: 01594 368009</p></div>"
+        },
+        {
+          coords:{lat:51.809485,lng:-2.5692920},
+          content:"<h2>Pedle a Bike Bway</h2><p>Cycle center, cafe, and bike repairs</p>" +
+          "<p>Tele: 01594 729000</p>"
+		  
+		  
+        },
+        {
+          coords:{lat:51.8333019,lng:-2.5119103},
+		content:"<h2>Sprung Suspension</h2><p>For all your suspension repairs and wheel trueing</p>" +
+          "<p>Tele: 01594 729030</p>" 
+		
+		},
+
+		{
+          coords:{lat:51.790908,lng:-3.0034466},
+          content:"<h2>Treads N Trails</h2><p>For all your suspension repairs and wheel trueing</p>" +
+          "<p>Tele: 01633 729030</p>"
+          
+          
+	  
+        },
+{
+          coords:{lat:51.87542254,lng:-2.9832272},
+		  content:"<h2>Black Mountain Cycle Center</h2><p>Trail Center (Basic)</p>" +
+          "<p>Tele: 01633 729111</p>"
+	  
+	     },
+{
+          coords:{lat:51.7148259,lng:-3.3707652},
+          content:"<h2>BikePark Wales</h2><p>Trail center, cafe, and bike repairs</p>" +
+          "<p>Tele: 01633 729791</p>"
+	  
+        }
+        
+        
+      ];
+
+      // Loop through markers
+      for(var i = 0;i < markers.length;i++){
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props){
+        var marker = new google.maps.Marker({
+          position:props.coords,
+          map:map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+
+
+  </script>
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017-2020 ForestAdventures, Inc. &middot; <a href="#" class="text-colour-ltgr">Privacy</a> &middot; <a href="#" class="text-colour-ltgr">Terms</a></p>
+  </footer>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjx-VAXXUKE_iSpdrBup7q-8Xm3V3p16I&callback=initMap"></script>
+</body>
+</html>
