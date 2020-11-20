@@ -57,6 +57,7 @@
 
 <div><h1 class="margin">Places to Enjoy</h1></div>
   <div id="map"></div>
+  <div id="shopdetail"></div>
   <script>
     function initMap(){
       // Map options
@@ -82,40 +83,40 @@
           coords:{lat:51.7661148,lng:-2.556003},
           title:"Hello",
 		  content:"<div><h2>Dean Forest Cycles</h2><p>Cafe and accessory Sale</p></div>" +
-		  "<div><p>Tele: 01594 368009</p></div>"
+		  "<div><p>Tele: 01594 368009</p></div>" + "<img src='./assets/figures/dean.png'></img>"
         },
         {
           coords:{lat:51.809485,lng:-2.5692920},
           content:"<h2>Peddle a Bike Away</h2><p>Cycle center, cafe, and bike repairs</p>" +
-          "<p>Tele: 01594 729000</p>"
+          "<p>Tele: 01594 729000</p>" + "<img src='./assets/figures/peddle.png'></img>"
 		  
 		  
         },
         {
           coords:{lat:51.8333019,lng:-2.5119103},
 		content:"<h2>Sprung Suspension</h2><p>For all your suspension repairs and wheel trueing</p>" +
-          "<p>Tele: 01594 729030</p>" 
+          "<p>Tele: 01594 729030</p>" + "<img src='./assets/figures/Sprung.png'></img>"
 		
 		},
 
 		{
           coords:{lat:51.790908,lng:-3.0034466},
           content:"<h2>Treads N Trails</h2><p>For all your suspension repairs and wheel trueing</p>" +
-          "<p>Tele: 01633 729030</p>"
+          "<p>Tele: 01633 729030</p>" + "<img src='./assets/figures/treads.png'></img>"
           
           
 	  
         },
 {
           coords:{lat:51.87542254,lng:-2.9832272},
-		  content:"<h2>Black Mountain Cycle Center</h2><p>Trail Center (Basic)</p>" +
-          "<p>Tele: 01633 729111</p>"
+		  content:"<h2>Black Mountain Cycle Centre</h2><p>Trail Centre (Basic)</p>" +
+          "<p>Tele: 01633 729111</p>" + "<img src='./assets/figures/BMcycle.png'></img>"
 	  
 	     },
 {
           coords:{lat:51.7148259,lng:-3.3707652},
-          content:"<h2>BikePark Wales</h2><p>Trail center, cafe, and bike repairs</p>" +
-          "<p>Tele: 01633 729791</p>"
+          content:"<h2>BikePark Wales</h2><p>Trail centre, cafe, and bike repairs</p>" +
+          "<p>Tele: 01633 729791</p>" + "<img src='./assets/figures/bike.png'></img>"
 	  
         }
         
@@ -148,8 +149,11 @@
             content:props.content
           });
 
-          marker.addListener('click', function(){
+          marker.addListener('click', function(event){
             infoWindow.open(map, marker);
+          /*console.log(this); 
+          document.querySelector("div#shopdetail").innerHTML="<p>Hello world, this is the shop</p>";*/
+               
           });
         }
       }
