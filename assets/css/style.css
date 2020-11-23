@@ -38,9 +38,19 @@
             color: lightgreen;
         } 
 
+/* --- Map Size ---*/
+
+#map{
+      height:600px;
+      width:100%;
+    }
 
 /* ----------------------------------------Text Properties */
 
+.hide{
+		
+		display: none;
+	}
 
 
 /* ------------------------ Formatting */
