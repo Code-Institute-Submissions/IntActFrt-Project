@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-  <title>Places to Repair your bike</title>
+  <title>Places to Enjoy</title>
   <style>
     #map{
       height:600px;
@@ -17,6 +17,7 @@
 </head>
 <body class="bg-header">
 	<header>
+		/*Standard header with places to visit added and the active class moved to this page */
     <nav class="navbar fixed-top navbar-expand-lg navbar-light text-colour-ltgr bg-header" >
     <a class="navbar-brand text-colour-ltgr" href="index.html">OneStop Bike Shop</a>
     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
@@ -60,24 +61,23 @@
   <div id="shopdetail"></div>
   <script>
     function initMap(){
-      // Map options
+      /* Map options, sets Zoom and location of centre */
       var options = {
         zoom:10,
         center:{lat:51.7819,lng:-2.5765}
       }
 
-      // New map
       var map = new google.maps.Map(document.getElementById('map'), options);
 
-      // Listen for click on map
+      /* Listen for click on map */
       google.maps.event.addListener(map, 'click', function(event){
-        // Add marker
+        /* Add marker */
         addMarker({coords:event.latLng});
       });
 
       
 
-      // Array of markers
+      /* Array of markers */
       var markers = [
         {
           coords:{lat:51.7661148,lng:-2.556003},
@@ -95,7 +95,7 @@
         {
           coords:{lat:51.8333019,lng:-2.5119103},
 		content:"<h2>Sprung Suspension</h2><p>For all your suspension repairs and wheel trueing</p>" +
-          "<p>Tele: 01594 729030</p>" + "<img src='./assets/figures/Sprung.png'></img>"
+          "<p>Tele: 01594 729030</p>" + "<img src='./assets/figures/sprung.png'></img>"
 		
 		},
 
@@ -123,27 +123,24 @@
         
       ];
 
-      // Loop through markers
+      /* Loop through markers */
       for(var i = 0;i < markers.length;i++){
-        // Add marker
-        addMarker(markers[i]);
+       addMarker(markers[i]);
       }
 
-      // Add Marker Function
+      /* Add Marker Function */
       function addMarker(props){
         var marker = new google.maps.Marker({
           position:props.coords,
           map:map,
-          //icon:props.iconImage
         });
 
-        // Check for customicon
+        /* Check for customicon */
         if(props.iconImage){
-          // Set icon image
           marker.setIcon(props.iconImage);
         }
 
-        // Check content
+        /* Check content */
         if(props.content){
           var infoWindow = new google.maps.InfoWindow({
             content:props.content
@@ -161,6 +158,7 @@
 
 
   </script>
+  /* Stardard footer to match the rest of the site */
   <footer class="container">
     <p class="float-right"><a href="#">Back to top</a></p>
     <p>&copy; 2017-2020 ForestAdventures, Inc. &middot; <a href="#" class="text-colour-ltgr">Privacy</a> &middot; <a href="#" class="text-colour-ltgr">Terms</a></p>

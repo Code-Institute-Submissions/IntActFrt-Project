@@ -1,45 +1,79 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# One Stop Bike Shop
+### I have designed this site to use the existing site and I added the additional functionality needed to meet the criteria for this assignment.
+### The site could be further developed to allow users to add sites and places of interest to the map.
+# UX
+### The basic idea of the site is allow mountain bikers of all abilities to be able to maintain their bikes, and to find on the map places that will enable them to get additional help, and to find plac es to ride.
+### This site was a template taken from Bootstrap and then adapted for the needs of the site, I have some rough wireframes that I created. 
+<img src="/assets/figures/Desktop.png" style="margin: 1px;">;
+### The is the wirfame for the desktop applications, this allows for the section that defines the sales items to be displayed in three columns.
+<img src="/assets/figures/Mobile.png" style="margin: 1px;">;
+### This wireframe is for mobile divices and allows the sales section to be displayed in a single column, this is due to the smaller screen sizes of these devices.
+### The site was developed to give the user access to some basic maintenance information, that could be changed once a month for example, then giving the new bike owners some interesting and useful things to buy. With the addition of place to visit the users can see place to ride and places to get helpwhen they need it.
+# Features
+### Once the site is finished the site will allow novice and experienced users to maintain their bikes, using some of the detailed procedures and the sales section of the site to buy the tools they may need.
+### The site caters for both male and female riders, the site could be developed to have video clips of the maintenance tasks.
+### Also places that users think could be good to visit or helpful when you have a problem. These might be broken down into two maps showing places to ride and places to fix the bike.
 
-Welcome djrowley2104,
+### I used nothing too fancy, just some basic Bootstrap and links to pages, the site is a very simple one. I want to keep things simple, as I feel complicating things adds a layers of confusion which no one needs.
+# Testing
+### I have tried to make sure that the site behaves the same way for all type of devices using the Bootstrap grid system.
+### I used a site called uptrends to check the spped of my site, mainy because lighthouse was not working, but it seems to give similar results, see below;
+<img src="/assets/figures/speedtest_results.png" style="margin: 1px;">;
+### From this report you can clearly see that the site works well, I have not made many changes to the basic site so only had to check the changed/added pages.
+### I would have tested the site on a focus group, but as the site is not finished and finishing it would take lots more time than I have, I have not used any third party groups.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+# Deployment
+### My site will be deployed using GitHub Pages. We seem to have been led into using GitHub on the course and as I know of no other way of hosting this is the one chosen.
 
-## Gitpod Reminders
+# Credits
+## Content
+### The Navbar is a basic one from the Bootstrap template, but I have added more options and changed the colour of the Navbar. 
+### I also changed the background colour scheme, this colour scheme runs through all of the linked pages in the site.
+### I also added a media query to ensure that the site works better for smaller screens.
+### Where links don't work I added a dummy page that loads and says "TBD" in large text, this was to inform the reader that the link does not work and that it's not their PC, and the site will be fixed later.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+# Media
+## The three images used for the carousel were made from images from google searches, there are many different images;
+## The Service Centre image
+### I used several images taken from google searches to create this image.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
+## The Tool Sales image
+### I used several images taken from google searches to create this image.
 
-Another blue button should appear to click: *Open Browser*.
+## The Bike Sales image
+### I used several images taken from google searches to create this image.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ 
+# The Images for the sales section
+## Men’s Clothing
+### I used several images taken from google searches to create this image.
 
-## Updates Since The Instructional Video
+## Women’s Clothing
+### I used several images taken from google searches to create this image.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Safety Gear
+### I used several images taken from google searches to create this image.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+##The open and close image for the quick release front hub
+### This image was created from a Google search.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## The image used for the 15 mm Bolted Axle
+### This image was created from a Google search.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## The image used for the 20 mm Bolted Axle
+### This image was created from a Google search.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+# Google Maps
+## I added a Page called Places, this has Place to Enjoy in the Title so this is displayed in the tab once this page is sellected.  
+## The Google Map has several Markers added to it to show places to ride and repair you bike.
+## I used YouTube clips and Google Maps developers’ web page plus some of the W3C website to get the code needed for this page. One youtube clip was very handy it was a produced by Geocast, there were many tutorials that were extremely helpful.
+## I was able to add some images to the description of the place on my custom Google Map as well as some text detailing a little bit about waht the marker was showing.
+## With more time and more knowledge I could develop this site much further, I think the use of a data base and how to use them for the map might be covered in later segments of the course, so for now this as far as I can go.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
-
-Happy coding!
