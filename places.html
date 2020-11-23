@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    
   <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
   <title>Places to Enjoy</title>
   <style>
@@ -13,6 +16,11 @@
       height:600px;
       width:100%;
     }
+    
+    .hide{
+		
+		display: none;
+	}
   </style>
 </head>
 <body class="bg-header">
@@ -56,10 +64,45 @@
   <br>
 </header>
 
-<div><h1 class="margin">Places to Enjoy</h1></div>
+<div><h1 class="margin text-colour-ltgr">Places to Enjoy</h1></div>
   <div id="map"></div>
-  <div id="shopdetail"></div>
+  <div id="shopdetail" class="hide margin">
+  
+	<h1 id="shopTitle" class="margin text-colour-ltgr"></h1>
+	<h3 id="shopPhone" class="margin text-colour-ltgr"></h3>
+  
+      <form class="needs-validation margin text-colour-ltgr" novalidate="">
+        <div class="col-md-6 mb-3">
+          <label for="email">Email <span class="text-muted">(Esentional if you want us to get back to you quickly)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+		  </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlTextarea1">Question</label>
+            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Pleae Enter Question Here" required>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Send Email</button>
+      </form>
+  </div>
   <script>
+	  
+	  function load_shop_detail(marker) {
+			/*  Define the additional elements for the list below  */
+			console.log(" Hello world, this is the shop", marker.title, marker.phone);
+			//document.querySelector("div#shopdetail").innerHTML="<p>Hello world, this is the shop</p>";
+			/* Adds elements to the list */
+			document.getElementById('shopTitle').innerHTML = marker.title;
+			document.getElementById('shopPhone').innerHTML = marker.phone;
+			document.getElementById('shopdetail').classList.remove('hide');
+	};
+		
+	  
+	  
+	  
+	  
     function initMap(){
       /* Map options, sets Zoom and location of centre */
       var options = {
@@ -81,45 +124,62 @@
       var markers = [
         {
           coords:{lat:51.7661148,lng:-2.556003},
-          title:"Hello",
+          title: "Dean Forest Cycles",
+          phone: "01594 368009",
 		  content:"<div><h2>Dean Forest Cycles</h2><p>Cafe and accessory Sale</p></div>" +
-		  "<div><p>Tele: 01594 368009</p></div>" + "<img src='./assets/figures/dean.png'></img>"
+		  "<div><p>Tele: 01594 368009</p></div>" + "<img src='./assets/figures/dean.png'></img>" + "<a onClick='load_shop_detail' class='detail' href='#'> book a service</a>"
         },
         {
-          coords:{lat:51.809485,lng:-2.5692920},
+		  coords:{lat:51.809485,lng:-2.5692920},
+          title: "Peddle a Bike Away",
+		  phone: "01594 729000",
           content:"<h2>Peddle a Bike Away</h2><p>Cycle center, cafe, and bike repairs</p>" +
-          "<p>Tele: 01594 729000</p>" + "<img src='./assets/figures/peddle.png'></img>"
+          "<p>Tele: 01594 729000</p>" + "<img src='./assets/figures/peddle.png'></img>" + "<a onClick='load_shop_detail' class='detail' href='#'> book a service</a>"
 		  
 		  
         },
         {
+          
           coords:{lat:51.8333019,lng:-2.5119103},
-		content:"<h2>Sprung Suspension</h2><p>For all your suspension repairs and wheel trueing</p>" +
-          "<p>Tele: 01594 729030</p>" + "<img src='./assets/figures/sprung.png'></img>"
+          title: "Sprung Suspension",
+          phone: "01594 729030",
+		  content:"<h2>Sprung Suspension</h2><p>For all your suspension repairs and wheel trueing</p>" +
+          "<p>Tele: 01594 729030</p>" + "<img src='./assets/figures/sprung.png'></img>" + "<a onClick='load_shop_detail' class='detail' href='#'> book a service</a>"
 		
 		},
 
 		{
+         
           coords:{lat:51.790908,lng:-3.0034466},
+          title: "Treads N Trail",
+          phone: "01633 729030",
           content:"<h2>Treads N Trails</h2><p>For all your suspension repairs and wheel trueing</p>" +
-          "<p>Tele: 01633 729030</p>" + "<img src='./assets/figures/treads.png'></img>"
+          "<p>Tele: 01633 729030</p>" + "<img src='./assets/figures/treads.png'></img>" + "<a onClick='load_shop_detail' class='detail' href='#'> book a service</a>"
           
           
 	  
         },
 {
+          
           coords:{lat:51.87542254,lng:-2.9832272},
+          title: "Black Mountain Cycle Centre",
+          phone: "01633 729111",
 		  content:"<h2>Black Mountain Cycle Centre</h2><p>Trail Centre (Basic)</p>" +
-          "<p>Tele: 01633 729111</p>" + "<img src='./assets/figures/BMcycle.png'></img>"
+          "<p>Tele: 01633 729111</p>" + "<img src='./assets/figures/BMcycle.png'></img>" + "<a onClick='load_shop_detail' class='detail' href='#'> book a service</a>"
 	  
 	     },
 {
+          
           coords:{lat:51.7148259,lng:-3.3707652},
+          title: "BikePark Wales",
+          phone: "01633 729791",
           content:"<h2>BikePark Wales</h2><p>Trail centre, cafe, and bike repairs</p>" +
-          "<p>Tele: 01633 729791</p>" + "<img src='./assets/figures/bike.png'></img>"
+          "<p>Tele: 01633 729791</p>" + "<img src='./assets/figures/bike.png'></img>" + "<a onClick='load_shop_detail' class='detail' href='#'> book a service</a>"
 	  
         }
         
+        
+               
         
       ];
 
@@ -133,6 +193,8 @@
         var marker = new google.maps.Marker({
           position:props.coords,
           map:map,
+          title: props.title,
+          phone: props.phone,
         });
 
         /* Check for customicon */
@@ -148,18 +210,22 @@
 
           marker.addListener('click', function(event){
             infoWindow.open(map, marker);
-          /*console.log(this); 
-          document.querySelector("div#shopdetail").innerHTML="<p>Hello world, this is the shop</p>";*/
+			load_shop_detail(marker);
                
           });
         }
       }
+      
+	
     }
 
+	
+	
 
   </script>
-  /* Stardard footer to match the rest of the site */
+	
   <footer class="container">
+	  /* ---  Standard footer to match the rest of the site ---- */
     <p class="float-right"><a href="#">Back to top</a></p>
     <p>&copy; 2017-2020 ForestAdventures, Inc. &middot; <a href="#" class="text-colour-ltgr">Privacy</a> &middot; <a href="#" class="text-colour-ltgr">Terms</a></p>
   </footer>
