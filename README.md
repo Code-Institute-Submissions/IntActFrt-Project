@@ -31,9 +31,9 @@
 ### I also changed the background colour scheme, this colour scheme runs through all of the linked pages in the site.
 ### I also added a media query to ensure that the site works better for smaller screens.
 ### Where links don't work I added a dummy page that loads and says "TBD" in large text, this was to inform the reader that the link does not work and that it's not their PC, and the site will be fixed later.
-
-
-
+### The markers were added using information gained from a Geocaster Youtube clip, which I had to develop further to show all the information adding images from the official webisites of the places marked on the map. 
+### With some help from my mentor I was able to add the email section that appears at the bottom of the page once the marker has been clicked.
+### Once the site was working I thn moved the script information into a separate .js folder and put a link to it at the bottom of the page after the footer.
 
 # Media
 ## The three images used for the carousel were made from images from google searches, there are many different images;
@@ -74,6 +74,6 @@
 ## I used YouTube clips and Google Maps developers’ web page plus some of the W3C website to get the code needed for this page. One youtube clip was very handy it was a produced by Geocast, there were many tutorials that were extremely helpful.
 ## I was able to add some images to the description of the place on my custom Google Map as well as some text detailing a little bit about waht the marker was showing.
 ## With more time and more knowledge I could develop this site much further, I think the use of a data base and how to use them for the map might be covered in later segments of the course, so for now this as far as I can go.
-
+## Once the site was working I thn moved the script information into a separate .js folder and put a link to it at the bottom of the page after the footer.
 
 
