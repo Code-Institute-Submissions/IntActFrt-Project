@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,13 +13,40 @@
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
     <title>Contact</title>
 
-  </head>
-    
+	<script src="./assets/java/mainscript.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  
+	<script>	  
+	   emailjs.init("user_AhXjjZf5ek9tU9Xzxz0OY");
+	  function sendEmail(e) {
+      e.preventDefault();
+      name = document.getElementById('user').value;
+      email = document.getElementById('email').value;
+      message = document.getElementById('message').value;
+      console.log(name, email, message);
+      var templateParams = {
+		to_name: name,
+		from_name: 'Website name',
+		message: message,
+		to_email: email
+	};
+	emailjs.send("service_czabzhr","template_tpvx4ae", templateParams).then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+  
+      	alert("Success Email sent, we will get back to you");
+      
+        
+    }, function(error) {
+      console.log('FAILED...', error);
+    });
+	}
+  
+	</script>
 
 
-  <body class="bg-header">
-    <header>
-    /*Standard header with places to visit added and the active class moved to this page */
+</head>
+<body class="bg-header">
+<header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #179db8;">
     <a class="navbar-brand text-colour-ltgr" href="index.html">OneStop Bike Shop</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +61,7 @@
           <a class="nav-link text-colour-ltgr" href="service.html">Book a Service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-colour-ltgr" href="places.html">Places to Enjoy</a>
+          <a class="nav-link text-colour-ltgr" href="places.html">Ride N Repair</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link text-colour-ltgr" href="contact.html">Contact</a>
@@ -48,7 +75,7 @@
   </nav>
 </header>
 
-    <div class="container">
+  <div class="container">
   <div class="py-5 text-center">
     <!--img class="d-block mx-auto mb-4 slider" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="500" height="500"-->
     <h2 class="text-colour-ltgr">Please Contact Us, We're Happy to Help</h2>
@@ -58,96 +85,43 @@
   <div class="row">
     
     <div class="col-md-8 order-md-1 text-colour-ltgr">
-      <h4 class="mb-3">Contact Address</h4>
-      <form class="needs-validation" novalidate>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">First name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid first name is required.
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="lastName">Last name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid last name is required.
-            </div>
-          </div>
-        </div>
-
+      <h4 class="mb-3">Contact Form</h4>
+      <form class="contact-form" onsubmit="sendEmail(event)">
         <div class="mb-3">
-          <label for="username">Username</label>
+          <label for="username" >Username</label>
           <div class="input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
             </div>
-            <input type="text" class="form-control" id="username" placeholder="Username" required>
+            <input type="text" name="user_name" id="user" class="form-control" placeholder="Username" required>
             <div class="invalid-feedback" style="width: 100%;">
               Your username is required.
             </div>
           </div>
         </div>
-
         <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Esentional if you want us to get back to you quickly)</span></label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <label for="email">Email <span class="text-muted">(Essential if you want us to get back to you quickly)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
           </div>
         </div>
-
-        <div class="mb-3">
-          <label for="address">Address</label>
-          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-          <div class="invalid-feedback">
-            Please enter your shipping address.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-        </div>
-
         <div class="row">
-          <div class="col-md-5 mb-3">
-            <label for="country">Country</label>
-            <select class="custom-select d-block w-100" id="country" required>
-              <option value="">Choose...</option>
-              <option>United Kingdom</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a valid country.
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="state">County</label>
-            <select class="custom-select d-block w-100" id="state" required>
-              <option value="">Choose...</option>
-              <option>Gloucestershire</option>
-            </select>
-            <div class="invalid-feedback">
-              Please provide a valid County.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="zip">Post Code</label>
-            <input type="text" class="form-control" id="zip" placeholder="" required>
-            <div class="invalid-feedback">
-              Post Code required.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="zipa">Question</label>
-            <input type="text" class="form-control" id="zipa" placeholder="Pleae Enter Question Here" required>
+          <div class="col-md-12 mb-3">
+            <label>Question</label>
+            <input type="message" class="form-control" id="message" placeholder="Pleae Enter Question Here" rows="3" required>
             
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-9 mb-3">
           <p>We will endevour to get back to you as quickly as possible, please be aware we are busy keeping people on the trails</p>
           </div>
         </div>
+        
+        <div class="col-md-6 mb-3">
+        
+        <hr class="mb-4">
+        <button class="btn btn-success btn-lg" type="submit" value="Send">Send Email</button>
+        </div>
+        
       </form>
     </div>
   </div>
@@ -160,7 +134,8 @@
     </ul>
   </footer>
 </div>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <script src="form-validation.js"></script></body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="form-validation.js"></script></body>
 </html>
