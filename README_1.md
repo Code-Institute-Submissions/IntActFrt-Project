@@ -13,13 +13,13 @@
 ### Imagery is important. The images used where all taken from Google searchs and then adapted to my requirements.
 ## Home Page Wireframe - View
 ### Below you can see the desktop wireframe;
-<img src="/assets/figures/Desktop.png" style="margin: 1px;">;
+<img src="/assets/figures/Desktop.png">;
 ## Mobile Wireframe - View
 ### Below you can see the mobile device wire frame;
-<img src="/assets/figures/Mobile.png" style="margin: 1px;">;
+<img src="/assets/figures/Mobile.png">;
 ## Contact Us Page Wireframe - View
 ### Below you can see the contact page wire frame;
-<img src="/assets/figures/Contactpage.png" style="margin: 1px;">;
+<img src="/assets/figures/Contactpage.png">;
 # Features
 ## Responsive on all device sizes
 ### After speaking to my mentor I use some software called Responsinator to check that the site was able to adapt to many different devices.
@@ -48,10 +48,10 @@
 # Testing
 ## The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 ## W3C Markup Validator - Results
-<img src="/assets/figures/Html_Checker.png" style="margin: 1px;">;
+<img src="/assets/figures/Html_Checker.png">;
 
 ## W3C CSS Validator - Results
-<img src="/assets/figures/CSS_checked.png" style="margin: 1px;">;
+<img src="/assets/figures/CSS_checked.png">;
 ## Testing User Stories from User Experience (UX) Section
 ### First Time Visitor Goals
 ## As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
@@ -98,7 +98,8 @@
 ### Bootstrap has been invaluable in making a resposive and useable website.
 
 # Content
-## All content was written by the developer.
+## All content was written by the developer, any code that was used/taken from other sites has been commented to let the codeinstitue know where it came from.
+## I basically used some bootsrap templates and adapted them to give me what I needed.
 
 # Psychological properties of colours text in the README.md was found here
 
