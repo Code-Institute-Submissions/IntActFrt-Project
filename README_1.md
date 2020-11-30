@@ -1,14 +1,15 @@
 # User stories
 ## First Time Visitor Goals
-### As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation and how to find things I don’t know I need.
+### As a First Time Visitor, I want to easily understand the main purpose of the site and easily find what I want as I'm in a hurry; I'm either maintaining my bike, out on a ride and something needs mending, or I'm planning my ride.
 ### I really tried to make a site that is easy for all to use, and a site that conforms to the norms. Any major deviations will lead to confussion, making the site harder to use.
 ## Returning Visitor Goals
 ### As a Returning Visitor, I want to find information about maintenance activities and maybe some training in my area. 
+### I want to find things fast, I'm in a hurry; I'm either maintaining my bike, out on a ride and something needs mending, or I'm planning my ride.
 # Design
 ## Colour Scheme
 ### The two main colours used are turquoise for the background colour of the site and light green for the text
 ## Typography
-### The font was a standard one defined by Bootsrap, I have no desire to complicate the site and use phonts that make the site harder to read and therefore less useable.
+### The font was a standard one defined by Bootsrap, I have no desire to complicate the site and use phonts that make the site harder to read and therefore less useable. A san serif font is easy to read and all I want is a simple uncluttered site that delivers what the users need, fast efficient use.
 ## Imagery
 ### Imagery is important. The images used where all taken from Google searchs and then adapted to my requirements.
 ## Home Page Wireframe - View
@@ -22,7 +23,7 @@
 <img src="/assets/figures/Contactpage.png">;
 # Features
 ## Responsive on all device sizes
-### After speaking to my mentor I use some software called Responsinator to check that the site was able to adapt to many different devices.
+### After speaking to my mentor I used software called Responsinator to check that the site was able to adapt to many different devices.
 
 # Interactive elements
 
@@ -34,7 +35,7 @@
 ### Bootstrap 4.4.1:
 #### Bootstrap was used to assist with the responsiveness and styling of the website.
 ## Font Awesome:
-### Font Awesome was used on some pages on the website to add icons for aesthetic and UX purposes. I have found that certain icons do not display correctly so I had to adapt and make my own for the gogle maps page where I needed a phone icon to appear before the phone number, this was a customised icon that fitted into my site much better than a standard one.
+### Font Awesome was not used as the one icon I wanted did not display correctly so I made my own.
 ## jQuery:
 ### jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
 ## Git
@@ -57,23 +58,19 @@
 ## As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
 
 ## Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-### The main points are made immediately with the hero image
-### The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
+
+### The user has the option to navigate using the menu bar ontop, or to view a maintenance tip, or to buy clothing.
 ### As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
-### The site has been designed to be fluid and never to entrap the user, and to allow them to return to the main page at any time, or to navigate to other parts of the site with ease. 
-
-### Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-### The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-### At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
+### The site has been designed to be fluid and never to entrap the user allowing them to return to the index.html, and to know where there are as the page they are on is highlighted subtly.
+### The user can also scroll to the bottom of any page on the site to locate social media links on the page.
+### At the bottom of the Contact Us page, the user is told to send an email, a message will be displayed informing the use that they are important and we will get back to them.
 ## Returning Visitor Goals
 ### As a Returning Visitor, I want to find the new places to ride and repair my bike.
+### These are clearly shown on the map page.
 
-## These are clearly shown in the banner message.
-### They will be directed to a page with another hero image and call to action.
-## As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
 
-## The navigation bar clearly highlights the "Contact Us" Page.
+## The navigation bar clearly highlights the "Contact" Page, this shows the relvent information and displays clearly the fact that they have successfully sent an email.
 ### Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
 
 
