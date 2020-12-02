@@ -6,6 +6,8 @@
 ### As a Returning Visitor, I want to find information about maintenance activities and maybe some training in my area. 
 ### I want to find things fast, I'm in a hurry; I'm either maintaining my bike, out on a ride and something needs mending, or I'm planning my ride.
 # Design
+## The design is the same basic design as the webiste I used for the first project, there have been a few basic changes to the site, I removed both bike sales and tool sales basically as they did not and were not intended to work, si I removed them to make the site less confussing.
+
 ## Colour Scheme
 ### The two main colours used are turquoise for the background colour of the site and light green for the text
 ## Typography
@@ -30,14 +32,15 @@
 ## Technologies Used
 ### Languages Used
 #### HTML5
+#### JavaScript
 #### CSS3
 ## Frameworks, Libraries & Programs Used
 ### Bootstrap 4.4.1:
 #### Bootstrap was used to assist with the responsiveness and styling of the website.
-## Font Awesome:
-### Font Awesome was not used as the one icon I wanted did not display correctly so I made my own.
-## jQuery:
-### jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+### Font Awesome:
+#### Font Awesome was not used as the one icon I wanted did not display correctly so I made my own.
+### jQuery:
+#### jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
 ## Git
 ### Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 ## GitHub:
@@ -69,10 +72,8 @@
 ### As a Returning Visitor, I want to find the new places to ride and repair my bike.
 ### These are clearly shown on the map page.
 
-
 ## The navigation bar clearly highlights the "Contact" Page, this shows the relvent information and displays clearly the fact that they have successfully sent an email.
 ### Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-
 
 # Frequent User Goals
 ## As a Frequent User, I decided that they would need access to repair sites and places to ride, these will be added and the site will grow as the users add their favourite places that they want to share with other people.
@@ -86,6 +87,14 @@
 # Deployment
 ## GitHub Pages
 ### The project was deployed to GitHub Pages.
+## Deployment process
+### The first step was to create a template, which as this was a copy of the last site I created I simply copied the last site.
+### The next step was to start git pod from github.
+### Once I had the site on gite hub I was able to copy the files from the old site to the new site.
+### Once the design and development work was done, I did a final "git add .", then a "git commit -M "", and then the "git push" the site was then loaded onto github.
+### Once on github and after leaving it guthub sometime to update, I checked the files to makesure they were correct.
+### Then the a link to the deployed site was made from the "Settings" menu in github.
+### This link was then given to the "code institute" to assess.
 
 # Credits
 ## Code
@@ -106,4 +115,5 @@
 ## My Mentor for continuous helpful feedback. I was able to learn so much from our short meetings, they have been invaluable to me.
 
 # Tutor support at Code Institute for their support, while I have not used them for any of my projects, when I have contacted them regarding other issues they have been very helpful.
+
 
