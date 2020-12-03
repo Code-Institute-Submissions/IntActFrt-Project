@@ -2,7 +2,7 @@
 ## I have designed this to give the novice bike owner some small amounts of information to help them maintain their bike. The site also has clothing sales, none of these work but they could be further developed in other projects on the course.
 ## The site could be further developed to show clips of maintenance activities as well as the photos and text that detail the each of the tasks. Maybe even a tip of the week could be added so that returning users see new stuff. 
 ## Adding accounts for users might another development, Once a user has an account this can be used to target things they look at and send them emails on similar items or sales details.
-## Due to the time constraints, I have not had any feedback from my other projects, I hope I have add enough detail to the readme file. I have added more information as a result of re-listening to the advice given in the assignment section. Also I only found out about writing the readme as I went along after staring this project, so my final project will follow the advice more clearly, hopefully it will show in the next readme the is seen.
+## Due to the time constraints, I have not had any feedback from my first project, I hope I have added enough detail to the readme file. I have added more information as a result of re-listening to the advice given in the assignment section. Also I only found out about writing the readme as I went along after staring this project, so my final project will follow the advice more clearly, hopefully it will show in the next readme the is seen.
 
 # Site Goals
 ## The shop is designed to find maintenance information, and then for the user to find and buy the tools they need to do the job.
