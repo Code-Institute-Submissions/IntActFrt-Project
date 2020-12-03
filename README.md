@@ -1,79 +1,134 @@
-# One Stop Bike Shop
-### I have designed this site to use the existing site and I added the additional functionality needed to meet the criteria for this assignment.
-### The site could be further developed to allow users to add sites and places of interest to the map.
-# UX
-### The basic idea of the site is allow mountain bikers of all abilities to be able to maintain their bikes, and to find on the map places that will enable them to get additional help, and to find plac es to ride.
-### This site was a template taken from Bootstrap and then adapted for the needs of the site, I have some rough wireframes that I created. 
-<img src="/assets/figures/Desktop.png" style="margin: 1px;">;
-### The is the wirfame for the desktop applications, this allows for the section that defines the sales items to be displayed in three columns.
-<img src="/assets/figures/Mobile.png" style="margin: 1px;">;
-### This wireframe is for mobile divices and allows the sales section to be displayed in a single column, this is due to the smaller screen sizes of these devices.
-### The site was developed to give the user access to some basic maintenance information, that could be changed once a month for example, then giving the new bike owners some interesting and useful things to buy. With the addition of place to visit the users can see place to ride and places to get helpwhen they need it.
-# Features
-### Once the site is finished the site will allow novice and experienced users to maintain their bikes, using some of the detailed procedures and the sales section of the site to buy the tools they may need.
-### The site caters for both male and female riders, the site could be developed to have video clips of the maintenance tasks.
-### Also places that users think could be good to visit or helpful when you have a problem. These might be broken down into two maps showing places to ride and places to fix the bike.
+# User stories
+## First Time Visitor Goals
+### As a First Time Visitor, I want them to be able to, easily understand the main purpose of the site and easily find what they want as they are in a hurry; They are either maintaining my bike, out on a ride and something needs mending, or they are planning a ride.
+### I tried to make a site that is easy for all to use, and a site that conforms to the norms. Any major deviations will lead to confussion, making the site harder to use.
+## Returning Visitor Goals
+### As a Returning Visitor, I want them to find information about maintenance activities and maybe some maintenance tips in the main text area. 
+### I them want to be able to find things fast, they are in a hurry; they are  either maintaining my bike, out on a ride and something needs mending, or they are planning a ride.
+# Design
+## The design is the same basic design as the webiste I used for the first project, there have been a few basic changes to the site, I removed both bike sales and tool sales basically as they did add anything to the site as they did not work and were not intended to work, so I removed them to make the site less confusing.
+## I added the Ride n Repair section, which contained the custom Google map and contact information, this section is intended to expand as users of the site send information, in fact part of the sites development might be to allow users to add information to a map and I could allow this information to be added to my custom map.
+## The contact section was made to send an email.
+## For the purposes of the project the emails were sent to the senders email address not my sites email, this was to show that the site worked, and that the success display was telling the truth.
 
-### I used nothing too fancy, just some basic Bootstrap and links to pages, the site is a very simple one. I want to keep things simple, as I feel complicating things adds a layers of confusion which no one needs.
+## Colour Scheme
+### The two main colours used are turquoise for the background colour of the site and light green for the text, this was to create a simple site and to provide a link to the outdoors. Basically I wanted a simple uncluttered site.
+## Typography
+### The font was a standard one defined by Bootsrap, I have no desire to complicate the site and use phonts that make the site harder to read and therefore less useable. A san serif font is easy to read and all I want is a simple uncluttered site that delivers what the users need, in a fast and efficient way.
+## Imagery
+### Imagery is important. The images used where all taken from Google searchs and then adapted to my requirement using MS Paint.
+## Home Page Wireframe - View
+### Below you can see the desktop wireframe;
+<img src="/assets/figures/Desktop.png">;
+## Mobile Wireframe - View
+### Below you can see the mobile device wire frame;
+<img src="/assets/figures/Mobile.png">;
+## Contact Us Page Wireframe - View
+### Below you can see the contact page wire frame;
+<img src="/assets/figures/Contactpage.png">;
+# Features
+## Responsive on all device sizes
+### After speaking to my mentor I used software called Responsinator to check that the site was able to adapt to many different devices.
+
+# Interactive elements
+
+## Technologies Used
+### Languages Used
+#### HTML5
+#### JavaScript
+#### CSS3
+## Frameworks, Libraries & Programs Used
+### Bootstrap 4.4.1:
+#### Bootstrap was used to assist with the responsiveness and styling of the website.
+### Font Awesome:
+#### Font Awesome was not used as the one icon I wanted did not display correctly so I made my own.
+### jQuery:
+#### jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
+## Git
+### Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+## GitHub:
+### GitHub is used to store the projects code after being pushed from Gitpod.
+## Photoshop:
+### Photoshop was used to create the logo, resizing images and editing photos for the website.
+## Balsamiq:
+### Balsamiq was used to create the wireframes during the design process.
 # Testing
-### I have tried to make sure that the site behaves the same way for all type of devices using the Bootstrap grid system.
-### I used a site called uptrends to check the spped of my site, mainy because lighthouse was not working, but it seems to give similar results, see below;
-<img src="/assets/figures/speedtest_results.png" style="margin: 1px;">;
-### From this report you can clearly see that the site works well, I have not made many changes to the basic site so only had to check the changed/added pages.
-### I would have tested the site on a focus group, but as the site is not finished and finishing it would take lots more time than I have, I have not used any third party groups.
+## I used the inspect function within Google Chrome many times to ensure that the site was adaptive to the differing screen sizes, as smaller screens are easy to overlook. Adapting a Bootstrap Template helped with keeping the site adaptive for screen sizes.
+## I also used the Responsinator website to test that my site worked for differing screen sizes, once I had the working well in Google Chrome, this test was really to be sure.
+## I had to change the template to get the menus to work correctly, however I really struggled to change to font to the same font colour as the rest of the site. Well in fact the part that stopped me using my coloured font was the hamburger when the menus disappeared on the smaller screens, I lost the hamburger when the text changed colour, I could not find a way to change the colour of the hamburger, so after a few hours of searching the internet, I decided to give up.
+## I had to change a few button colours to fit in better with my colour scheme, over all the site seems to flow nicely and look better.
+## The images for the sales section were square in the Bootstrap Template, but I decided that they looked much better round, another change to the template.
+## Once the site looked good and responded to the changes in Google I decide to use other testing methods, mainly because lighthouse was not working correctly, these other sites are detailed below.
+## The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+## W3C Markup Validator - Results
+<img src="/assets/figures/Html_Checker.png">;
+
+## W3C CSS Validator - Results
+<img src="/assets/figures/CSS_checked.png">;
+## Testing User Stories from User Experience (UX) Section
+### First Time Visitor Goals
+## As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+
+## Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
+
+### The user has the option to navigate using the menu bar ontop, or to view a maintenance tip, or to buy clothing.
+### As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+
+### The site has been designed to be fluid and never to entrap the user allowing them to return to the index.html, and to know where there are as the page they are on is highlighted subtly.
+### The user can also scroll to the bottom of any page on the site to locate social media links on the page.
+### At the bottom of the Contact Us page, the user is told to send an email, a message will be displayed informing the use that they are important and we will get back to them.
+## Returning Visitor Goals
+### As a Returning Visitor, I want to find the new places to ride and repair my bike.
+### These are clearly shown on the map page.
+
+## The navigation bar clearly highlights the "Contact" Page, this shows the relvent information and displays clearly the fact that they have successfully sent an email.
+### Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
+
+# Frequent User Goals
+## As a Frequent User, I decided that they would need access to repair sites and places to ride, these will be added and the site will grow as the users add their favourite places that they want to share with other people.
+
+# Further Testing
+## The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX, using the functions in Google and the Responsinator.
+## Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+# Known Bugs 
+## The payment and address information does not work, to get the payment system working and to add a database behind the page is something that will be developed later. 
 
 # Deployment
-### My site will be deployed using GitHub Pages. We seem to have been led into using GitHub on the course and as I know of no other way of hosting this is the one chosen.
+## Initial Development
+### After running out of free time in Gitpod, I decided to not go over my 100hr limit that I would try to develop the site off line and on my hard drive, using Geany to edit the code. This provide very useful, once the code was working I uploaded it to GitPod and did the normal; git add ., git commit, and git push commands to save the work.
+## GitHub Pages
+### The project was deployed to GitHub Pages.
+## Deployment process
+### The first step was to create a template, which as this was a copy of the last site I created I simply copied the last site.
+### The next step was to start git pod from github.
+### Once I had the site on gite hub I was able to copy the files from the old site to the new site.
+### Once the design and development work was done, I did a final "git add .", then a "git commit -M "", and then the "git push" the site was then loaded onto github.
+### Once on github and after leaving it guthub sometime to update, I checked the files to makesure they were correct.
+### Then a link to the deployed site was made from the "Settings" menu in github.
+### This link was then given to the "code institute" to assess.
+
 
 # Credits
-## Content
-### The Navbar is a basic one from the Bootstrap template, but I have added more options and changed the colour of the Navbar. 
-### I also changed the background colour scheme, this colour scheme runs through all of the linked pages in the site.
-### I also added a media query to ensure that the site works better for smaller screens.
-### Where links don't work I added a dummy page that loads and says "TBD" in large text, this was to inform the reader that the link does not work and that it's not their PC, and the site will be fixed later.
-### The markers were added using information gained from a Geocaster Youtube clip, which I had to develop further to show all the information adding images from the official webisites of the places marked on the map. 
-### With some help from my mentor I was able to add the email section that appears at the bottom of the page once the marker has been clicked.
-### Once the site was working I thn moved the script information into a separate .js folder and put a link to it at the bottom of the page after the footer.
+## Code
+### I did not use a full-screen hero image in this version of my project.
+
+### Bootstrap4: i used the Bootstrap Library throughout the project mainly to make site responsive using the Bootstrap Grid System.
+### Bootstrap has been invaluable in making a resposive and useable website.
+
+# Content
+## I basically used Bootsrap templates and adapted them to give me what I needed.
+## I tried to make comments in the HTML to show whare I use oter peoples code, but some of the comments seemed to show on the deployed pages, so they had to be removed.
+## The Google Maps segment took a lot of you tube videos to get working correctly, and even then it was not easy to fix the problem, it turns out I was using the wrong restrictions on the Google’s developers site, and they stopped my custom map displaying correctly, once corrected all was well, but then came the fun part.
+## Getting an email to be sent once the location was selected on the map. Once this worked adapting the logic to work on the contact form was very easy.
+## Then getting the success message displayed took some figuring out, it was a Bootstrap modal that was adapted.
+## Overall I feel the site works well and is adaptive to all screen sizes (I did have to add a media query to help the site work better for smaller screens), overall I feel the site works well. After I have completed the course I hope I will have enough knowledge to be able to finish off the sections that don’t work, or at least know how to do it.
 
 # Media
-## The three images used for the carousel were made from images from google searches, there are many different images;
-## The Service Centre image
-### I used several images taken from google searches to create this image.
+## All Images were created using MS Paint to edit them to create the collage of pictures. They initially all came from a Google search and then were copied and pasted into the collage of images.
+## I had to make up my own icon for the telephone as Font awesome phone icon did not display correctly, this allowed me to customize it to fit into my sites colour scheme.
+# Acknowledgements
+## My Mentor for continuous helpful feedback. I was able to learn so much from our short meetings, they have been invaluable to me. My mentor was able to help me think differently and to tools and code that was developed and to amend it for my needs, and importantly to learn that no one person knows all the answers, to be a great coder you only have to first, learn that and then know where to look for the answers.
 
-
-## The Tool Sales image
-### I used several images taken from google searches to create this image.
-
-## The Bike Sales image
-### I used several images taken from google searches to create this image.
-
- 
-# The Images for the sales section
-## Men’s Clothing
-### I used several images taken from google searches to create this image.
-
-## Women’s Clothing
-### I used several images taken from google searches to create this image.
-
-## Safety Gear
-### I used several images taken from google searches to create this image.
-
-
-##The open and close image for the quick release front hub
-### This image was created from a Google search.
-
-## The image used for the 15 mm Bolted Axle
-### This image was created from a Google search.
-
-## The image used for the 20 mm Bolted Axle
-### This image was created from a Google search.
-
-# Google Maps
-## I added a Page called Places, this has Place to Enjoy in the Title so this is displayed in the tab once this page is sellected.  
-## The Google Map has several Markers added to it to show places to ride and repair you bike.
-## I used YouTube clips and Google Maps developers’ web page plus some of the W3C website to get the code needed for this page. One youtube clip was very handy it was a produced by Geocast, there were many tutorials that were extremely helpful.
-## I was able to add some images to the description of the place on my custom Google Map as well as some text detailing a little bit about waht the marker was showing.
-## With more time and more knowledge I could develop this site much further, I think the use of a data base and how to use them for the map might be covered in later segments of the course, so for now this as far as I can go.
-## Once the site was working I thn moved the script information into a separate .js folder and put a link to it at the bottom of the page after the footer.
+# Tutor support at Code Institute for their support, while I have not used them for any of my projects, when I have contacted them regarding other issues they have been very helpful.
 
 
